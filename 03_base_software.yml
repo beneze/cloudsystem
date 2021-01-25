@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Ensure common applications are available
+      apt:
+        update_cache: yes
+        name: [vim, htop, tree, tmux, iftop, iotop, mc, curl, colordiff, python3-apt, apt-rdepends]
+        state: latest
+
+# kate: indent-width 2;
+# ansible-playbook --inventory inventory_staging --ask-become-pass 03_base_software.yml

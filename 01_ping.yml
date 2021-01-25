@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: no
+  
+  tasks:
+    - name: Ping the Linux hosts
+      ping:
+
+# kate: indent-width 2;
+# ansible-playbook --inventory inventory_staging 01_ping.yml
+    
+    

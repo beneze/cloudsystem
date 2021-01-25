@@ -1,0 +1,10 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+    - name: Set Timezone to Montreal/Toronto
+      become: true
+      command: timedatectl set-timezone "America/Toronto"
+
+# kate: indent-width 2;
+# ansible-playbook --inventory inventory_staging --ask-become-pass 02_timezone.yml
