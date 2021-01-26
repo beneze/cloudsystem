@@ -8,5 +8,5 @@
 
 # kate: indent-width 2;
 # ansible-playbook --inventory inventory_staging 01_ping.yml
-    
+# Additional comments for ELG6116 class.    
     
